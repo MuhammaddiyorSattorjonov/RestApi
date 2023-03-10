@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#CAE1FE"
+    android:padding="15dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:endIconMode="clear_text"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:helperTextTextColor="#323232"
+            >
+
+            <EditText
+                android:id="@+id/sarlavha"
+                android:inputType="textPersonName"
+                android:paddingEnd="40dp"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:importantForAutofill="no"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Matni"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:endIconMode="clear_text"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:helperTextTextColor="#323232"
+            >
+
+            <EditText
+                android:id="@+id/manti"
+                android:inputType="textPersonName"
+                android:paddingEnd="40dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:importantForAutofill="no"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <Spinner
+            android:id="@+id/holat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:entries="@array/items"
+            android:inputType="none"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="20sp" />
+        <Button
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:id="@+id/muddat"
+            android:layout_height="55dp"
+            android:text="Muddat"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:backgroundTint="#C9E0FD"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_add"
+        android:textAllCaps="false"
+        android:text="Saqlash"
+        android:backgroundTint="#4A7FA9"
+        android:layout_gravity="center"
+        />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:id="@+id/prodress"
+        android:layout_gravity="center"
+        />
+</FrameLayout>
